@@ -1,4 +1,4 @@
-import icon from '../assets/wings-icon.png'
+import icon from '../../public/assets/wings-icon.png'
 
 const Footer = () => {
   return (
