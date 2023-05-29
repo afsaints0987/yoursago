@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 :root {
   --yellow: #fcfb0f;
   --white: #f2f2f2;
@@ -18,6 +19,14 @@ body {
   min-height: 100vh;
   font-family: var(--font);
   color: var(--white);
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
 
   .hero-container {
     display: flex;
@@ -43,7 +52,7 @@ body {
       font-weight: 500;
 
       @media screen and (max-width: 900px){
-        font-size: 1.25rem;
+        font-size: 1rem;
       }
     }
     .social-container {
@@ -64,6 +73,38 @@ body {
             transition: all 0.2s ease-in-out;
           }
         }
+      }
+    }
+  }
+
+
+  .item-container {
+    width: 50%;
+    margin: auto;
+    z-index: -1;
+    
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+    
+    .item img {
+      width: 15rem;
+      margin: auto;
+      
+    }
+
+    .item {
+      transform: scale(0.75);
+      opacity: 0.75;
+    }
+
+    .activeItem {
+      opacity: 1;
+      transform: scale(1); 
+
+      p {
+        font-size: 20px;
+        color: var(--yellow);
       }
     }
   }

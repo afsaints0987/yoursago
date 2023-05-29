@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Red Mango",
+            "image": "milktea-4.png"
+        },
+        {
+            "id": 2,
+            "name": "Strawberry CheeseCake",
+            "image": "milktea-1.png"
+        },
+        {
+            "id": 3,
+            "name": "Oreo CheeseCake",
+            "image": "milktea-2.png"
+        },
+        {
+            "id": 4,
+            "name": "Berry Apple",
+            "image": "milktea-3.png"
+        }
+    ]
+}
