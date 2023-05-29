@@ -35,7 +35,7 @@ const ImageSlider = () => {
             {items.map((item, index) => (
                 <div key={item.id} className={`${index === slideIndex ? "item activeItem" : "item"}`}>
                     <p>{item.name}</p>
-                    <img src={`/assets/${item.image}`} alt={item.name} />
+                    <img src={`../src/assets/${item.image}`} alt={item.name} />
                 </div>
             ))}
         </Slider>
