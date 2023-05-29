@@ -4,6 +4,7 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line react/prop-types
 const ImageSlider = () => {
@@ -16,6 +17,8 @@ const ImageSlider = () => {
         }
         getItems()
     },[])
+
+
 
     const settings = {
         infinite: true,
@@ -35,7 +38,7 @@ const ImageSlider = () => {
             {items.map((item, index) => (
                 <div key={item.id} className={`${index === slideIndex ? "item activeItem" : "item"}`}>
                     <p>{item.name}</p>
-                    <img src={`/assets/${item.image}`} alt={item.name} />
+                    <img src={`../assets/${item.image}`} alt={item.name} />
                 </div>
             ))}
         </Slider>
