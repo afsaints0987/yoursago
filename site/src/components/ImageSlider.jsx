@@ -1,8 +1,8 @@
-import data from '../data/data.json'
 import {useState, useEffect} from 'react'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+
 
 
 /* eslint-disable react/prop-types */
@@ -13,7 +13,10 @@ const ImageSlider = () => {
 
     useEffect(() => {
         const getItems = async () => {
-            setItems(data.data)
+            const getProducts = await fetch('data/data.json');
+            const products = await getProducts.json();
+            const product = await products.data
+            setItems(product)
         }
         getItems()
     },[])
@@ -38,7 +41,7 @@ const ImageSlider = () => {
             {items.map((item, index) => (
                 <div key={item.id} className={`${index === slideIndex ? "item activeItem" : "item"}`}>
                     <p>{item.name}</p>
-                    <img src={`../assets/${item.image}`} alt={item.name} />
+                    <img src={`assets/${item.image}`} alt={item.name} />
                 </div>
             ))}
         </Slider>
