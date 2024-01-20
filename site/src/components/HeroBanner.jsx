@@ -8,8 +8,8 @@ const HeroBanner = () => {
         <div className="social-container d-flex justify-content-center">
             <p>follow us:</p>
             <div className="socials">
-                <span className="mx-4 icons"><FaIcons.FaFacebookF /></span>
-                <span className="icons"><FaIcons.FaInstagram /></span>
+                <a href="https://www.facebook.com/yoursago" className="mx-4 icons"><FaIcons.FaFacebookF /></a>
+                <a href="https://www.instagram.com/yoursago/" className="icons"><FaIcons.FaInstagram /></a>
             </div>
         </div>
     </div>

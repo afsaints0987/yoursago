@@ -1,5 +1,9 @@
+import Footer from './components/Footer'
 import Header from './components/Header'
 import HeroBanner from './components/HeroBanner'
+import ImageSlider from './components/ImageSlider'
+
+
 
 const App = () => {
   
@@ -7,6 +11,8 @@ const App = () => {
     <div className="container">
       <Header/>
       <HeroBanner/>
+      <ImageSlider />
+      <Footer/>
     </div>
   )
 }
